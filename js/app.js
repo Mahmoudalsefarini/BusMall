@@ -48,7 +48,7 @@ function displayThreeImages(){
   leftIndex = generateRandomIndex();
   middleIndex = generateRandomIndex();
   rightIndex = generateRandomIndex();
-  while(leftIndex === rightIndex || leftIndex === middleIndex || leftIndex === middleIndex){
+  while(leftIndex === rightIndex || leftIndex === middleIndex || rightIndex === middleIndex){
     leftIndex = generateRandomIndex();
     middleIndex = generateRandomIndex();
     rightIndex = generateRandomIndex();
@@ -104,7 +104,7 @@ function handleClicking(event){
     for(let i = 0 ; i <ProductImage.allProduct.length; i++ ){
       let li = document.createElement('li');
       ul.appendChild(li);
-      li.textContent = `${ProductImage.allProduct[i].name} has ${ProductImage.allProduct[i].votes} Votes`;
+      li.textContent = `${ProductImage.allProduct[i].name} has ${ProductImage.allProduct[i].votes} Votes and  ${ProductImage.allProduct[i].shown} Shown` ;
     }
   
   }
