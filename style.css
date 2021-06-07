@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    color: rgb(0, 16, 49);
+}
+body{
+    background-color: rgb(3, 168, 173);
+}
+
+
+#secOne{
+    float: left;
+    width: 100%;
+}   
+#secTwo{
+    width: 35%;
+}
+img{
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+}
+ul{
+    width: 80%;
+    background-color: rgb(136, 129, 104);
+}
+
+li{
+    font-size: 30px;
+    font-weight: bold;
+    list-style: none;
+    color: rgb(4, 5, 7);
+}
+
+<hr> {
+
+    width: 5px;
+    background-color: black;
+    
+}
