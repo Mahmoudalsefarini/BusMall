@@ -90,10 +90,21 @@ function handleClicking(event){
         displayThreeImages();
     }else{
     
-    
+    gettingList();
     leftImageElement.removeEventListener('click',handleClicking);
     middleImageElement.removeEventListener('click',handleClicking);
     rightImageElement.removeEventListener('click',handleClicking);
     }
 
+  }
+
+
+  function gettingList(){
+    let ul = document.getElementById('unList');
+    for(let i = 0 ; i <ProductImage.allProduct.length; i++ ){
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.textContent = `${ProductImage.allProduct[i].name} has ${ProductImage.allProduct[i].votes} Votes`;
+    }
+  
   }
